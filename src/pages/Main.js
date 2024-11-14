@@ -46,6 +46,10 @@ const Main = () => {
                             <p className="detail-desc">코드 리뷰를 통해 프로젝트별로 새로 알게 된 코드나 정보를 리뷰합니다.</p>
                         </li>
                         <li>
+                            <span className="detail-title"><span className="highlight">기술 스터디</span></span>
+                            <p className="detail-desc">한가지 주제를 정해 서로 공부한 내용을 공유합니다.</p>
+                        </li>
+                        <li>
                             <span className="detail-title"><span className="highlight">퇴코</span></span>
                             <p className="detail-desc">업무가 먼저! 업무에 지장이 되지 않게 퇴코(퇴근하고 코딩)을 지향합니다.</p>
                         </li>
