@@ -54,64 +54,6 @@ header .group-name {
   margin-left: 10px;
 }
 
-/* 미디어 쿼리 추가 */
-@media screen and (max-width: 768px) {
-  header .title {
-      font-size: 1.5em;
-  }
-  
-  header .group-name {
-      font-size: 1.5em;
-  }
-  
-  .container {
-      padding: 15px;
-  }
-  
-  .activities {
-      grid-template-columns: 1fr; /* 모바일에서는 한 열로 표시 */
-      gap: 15px;
-  }
-  
-  .activity-card {
-      padding: 15px;
-  }
-  
-  .join-button {
-      padding: 12px 25px;
-      font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header .title {
-      font-size: 1.3em;
-  }
-  
-  header .group-name {
-      font-size: 38px;
-  }
-  
-  .container {
-      width: 95%;
-      padding: 10px;
-  }
-  
-  .activity-details li {
-      padding-left: 15px;
-  }
-  
-  .detail-desc {
-      font-size: 0.85em;
-  }
-}
-
-.activities {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
 .activity-card {
   border: 1px solid #ddd;
   padding: 5px 20px;
@@ -124,12 +66,16 @@ header .group-name {
 .join-button {
   background-color: #3498db;
   color: white;
-  padding: 15px 30px;
   border: none;
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
 }
+
+.main-button {
+  padding: 15px 30px;
+}
+
 .activity-details {
   list-style: none;
   padding: 0;
@@ -161,4 +107,136 @@ header .group-name {
   font-size: 0.9em;
   margin: 0;
   line-height: 1.4;
+}
+
+/* 타임라인 관련 */
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.timeline::after {
+  display: none; /* 세로 선 제거 */
+}
+
+.timeline-item {
+  padding: 10px 20px;
+  position: relative;
+  min-width: 250px; /* 각 아이템의 최소 너비 설정 */
+  box-sizing: border-box;
+  flex-shrink: 0; /* 아이템이 줄어들지 않도록 설정 */
+}
+
+/* odd/even 위치 설정 제거 */
+.timeline-item:nth-child(odd),
+.timeline-item:nth-child(even) {
+  left: 0;
+  width: auto;
+}
+
+.timeline-date {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.timeline-content {
+  padding: 0 20px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  height: 100%;
+}
+
+/* 스크롤바 스타일링 (선택사항) */
+.timeline::-webkit-scrollbar {
+  height: 8px;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 4px;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+
+/* 미디어 쿼리 추가 */
+@media screen and (max-width: 768px) {
+  header .title {
+      font-size: 1.5em;
+  }
+  
+  header .group-name {
+      font-size: 1.5em;
+  }
+  
+  .container {
+      padding: 15px;
+  }
+  
+  .activities {
+      grid-template-columns: 1fr; /* 모바일에서는 한 열로 표시 */
+      gap: 15px;
+  }
+  
+  .activity-card {
+      padding: 15px;
+  }
+  
+  .join-button {
+      padding: 12px 25px;
+      font-size: 16px;
+  }
+
+  .timeline {
+    display: block;
+    padding: 0;
+  }
+
+  .timeline-content {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .title {
+      font-size: 1.3em;
+  }
+  
+  header .group-name {
+      font-size: 38px;
+  }
+  
+  .container {
+      width: 95%;
+      padding: 10px;
+  }
+  
+  .activity-details li {
+      padding-left: 15px;
+  }
+  
+  .detail-desc {
+      font-size: 0.85em;
+  }
+
+}
+
+/* 모바일 대응 */
+@media screen and (max-width: 768px) {
+  .timeline-item {
+    min-width: 200px;
+  }
 }
