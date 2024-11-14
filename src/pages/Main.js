@@ -14,12 +14,17 @@ const Main = () => {
                 </div>
                 <div className="activities">
                     <div className="activity-card">
-                    
-                        <ul className="activity-details">
-                            <li>
-                                <span className="detail-title">개발바닥은 회원들 간의 교류와 협력을 통해 기술 역량을 강화하고 실질적인 프로젝트를 구현하는 것을 목표합니다.</span>
-                            </li>
-                        </ul>
+                    <ul className="activity-details">
+                        <li>
+                            <p>개발바닥은 회원들 간의 교류와 협력을 통해 기술 역량을 강화하고 <span className="highlight">실질적인 서비스</span>를 구현하는 것을 목표합니다.</p>
+                        </li>
+                        <li>
+                            <p>소수 인원이 팀을 이루어, 기획부터 배포까지 실전 경험을 쌓으며 서로 동기부여가 되는 활동을 지향합니다.</p>
+                        </li>
+                        <li>
+                            <p><span className="highlight">자기주도적으로</span> 공부하고, 공부한 내용을 프로젝트에 적용하는 것을 지향합니다.</p>
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </section>
@@ -38,16 +43,13 @@ const Main = () => {
                             <p className="detail-desc">수평적인 활동을 위해 이름, 직급대신 닉네임을 사용합니다.</p>
                         </li>
                         <li>
-                            <span className="detail-title"><span className="highlight">그룹 프로젝트</span></span>
-                            <p className="detail-desc">소규모로 팀을 이뤄 기획부터 배포까지 그룹 프로젝트를 진행합니다.</p>
+                            <span className="detail-title"><span className="highlight">서비스 개발</span></span>
+                            <p className="detail-desc">자신이 원하는 서비스를 기획하고 팀을 이뤄 개발합니다.</p>
+                            <p className="detail-desc">대단한 서비스가 아니여도 좋습니다. 쉬운 서비스부터 단계를 높여 나가는 것을 지향합니다.</p>
                         </li>
                         <li>
-                            <span className="detail-title"><span className="highlight">코드 리뷰</span></span>
-                            <p className="detail-desc">코드 리뷰를 통해 프로젝트별로 새로 알게 된 코드나 정보를 리뷰합니다.</p>
-                        </li>
-                        <li>
-                            <span className="detail-title"><span className="highlight">기술 스터디</span></span>
-                            <p className="detail-desc">한가지 주제를 정해 서로 공부한 내용을 공유합니다.</p>
+                            <span className="detail-title"><span className="highlight">특허 및 수익화</span></span>
+                            <p className="detail-desc">개발한 서비스를 방치하는게 아니라 특허를 받거나 수익화를 시도합니다.</p>
                         </li>
                         <li>
                             <span className="detail-title"><span className="highlight">퇴코</span></span>
@@ -82,46 +84,33 @@ const Main = () => {
                             <div className="timeline-date">2024년 12월</div>
                             <div className="timeline-content">
                                 <h3>동회회 OT (12.06)</h3>
-                                <p>동회회 방향성 설정 및 활동 계획 수립</p>
-                                <h3>기술 스터디 (12.20)</h3>
-                                <p>기술 스터디 상황 공유</p>
+                                <p>활동 계획 수립</p>
+                                <h3>미니 프로젝트 기획 (12.20)</h3>
+                                <p>미니 프로젝트 기획</p>
                             </div>
                         </div>
                         <div className="timeline-item">
                             <div className="timeline-date">2025년 1월</div>
                             <div className="timeline-content">
-                                <h3>기술 스터디 (01.03)</h3>
-                                <p>기술 스터디 상황 공유</p>
-                                <h3>기술 스터디 (01.17)</h3>
-                                <p>기술 스터디 최종 리뷰</p>
-                            </div>
-                        </div>
-                        <div className="timeline-item">
-                            <div className="timeline-date">2025년 2월</div>
-                            <div className="timeline-content">
-                                <h3>미니 프로젝트 기획 (02.07)</h3>
-                                <p>미니 프로젝트 기획 발표</p>
-                                <h3>미니 프로젝트 (02.21)</h3>
-                                <p>미니 프로젝트 진행 상황 공유 및 코드 리뷰</p>
-                            </div>
-                        </div>
-                        <div className="timeline-item">
-                            <div className="timeline-date">2025년 3월</div>
-                            <div className="timeline-content">
-                                <h3>미니 프로젝트 (03.07)</h3>
-                                <p>미니 프로젝트 진행 상황 공유 및 코드 리뷰</p>
-                                <h3>미니 프로젝트 리뷰 (03.21)</h3>
+                                <h3>미니 프로젝트 (01.03)</h3>
+                                <p>미니 프로젝트 진행 상황 공유</p>
+                                <h3>미니 프로젝트 리뷰 (01.17)</h3>
                                 <p>미니 프로젝트 최종 리뷰</p>
                             </div>
                         </div>
                         <div className="timeline-item">
-                            <div className="timeline-date">2025년 4월, 5월, 6월</div>
+                            <div className="timeline-date">2025년 2월, 3월, 4월</div>
                             <div className="timeline-content">
-                                <h3>그룹 프로젝트 기획 (04.04)</h3>
-                                <p>그룹 프로젝트 기획 발표</p>
-                                <h3>그룹 프로젝트 (04.18 ~ 06.05)</h3>
-                                <p>그룹 프로젝트 진행 상황 공유 및 코드 리뷰</p>
-                                <h3>그룹 프로젝트 리뷰 (06.20)</h3>
+                                <h3>그룹 프로젝트 기획 (02.07, 02.21)</h3>
+                                <p>그룹 프로젝트 기획</p>
+                                <h3>그룹 프로젝트 (03.07 ~ 04.18)</h3>
+                                <p>그룹 프로젝트 진행 상황 공유</p>
+                            </div>
+                        </div>
+                        <div className="timeline-item">
+                            <div className="timeline-date">2025년 5월</div>
+                            <div className="timeline-content">
+                                <h3>그룹 프로젝트 (05.02)</h3>
                                 <p>그룹 프로젝트 최종 리뷰</p>
                             </div>
                         </div>
@@ -134,7 +123,7 @@ const Main = () => {
             <h2>함께하고 싶으신가요?</h2>
             <p>새로운 동료를 언제나 환영합니다!</p>
             <button className="join-button main-button" onClick={HandleGooleForm}>가입하기</button>
-            </section>
+        </section>
         </div>
     )
 }

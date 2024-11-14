@@ -107,6 +107,7 @@ header .group-name {
   font-size: 0.9em;
   margin: 0;
   line-height: 1.4;
+  margin-bottom: 5px;
 }
 
 /* 타임라인 관련 */
