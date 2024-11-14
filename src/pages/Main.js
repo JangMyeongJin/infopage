@@ -92,16 +92,16 @@ const Main = () => {
                         <div className="timeline-item">
                             <div className="timeline-date">2025년 1월</div>
                             <div className="timeline-content">
-                                <h3>미니 프로젝트 (01.03)</h3>
+                                <h3>미니 프로젝트 (01.03, 01.17)</h3>
                                 <p>미니 프로젝트 진행 상황 공유</p>
-                                <h3>미니 프로젝트 리뷰 (01.17)</h3>
-                                <p>미니 프로젝트 최종 리뷰</p>
                             </div>
                         </div>
                         <div className="timeline-item">
                             <div className="timeline-date">2025년 2월, 3월, 4월</div>
                             <div className="timeline-content">
-                                <h3>그룹 프로젝트 기획 (02.07, 02.21)</h3>
+                                <h3>미니 프로젝트 최종 리뷰 (02.07)</h3>
+                                <p>미니 프로젝트 최종 리뷰</p>
+                                <h3>그룹 프로젝트 기획 (02.21, 03.07)</h3>
                                 <p>그룹 프로젝트 기획</p>
                                 <h3>그룹 프로젝트 (03.07 ~ 04.18)</h3>
                                 <p>그룹 프로젝트 진행 상황 공유</p>
