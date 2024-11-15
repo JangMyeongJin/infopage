@@ -83,7 +83,7 @@ const Main = () => {
                         <div className="timeline-item">
                             <div className="timeline-date">2024년 12월</div>
                             <div className="timeline-content">
-                                <h3>동회회 OT (12.06)</h3>
+                                <h3>동호회 OT (12.06)</h3>
                                 <p>활동 계획 수립</p>
                                 <h3>미니 프로젝트 기획 (12.20)</h3>
                                 <p>미니 프로젝트 기획</p>
