@@ -39,4 +39,4 @@ jobs:
       # 5. Transfer files to the server
       - name: Copy files to server
         run: |
-          scp -r ./build/ user@${{ secrets.SERVER_IP }}:/ssd/proten/nodejsAPI/react_test/
+          scp -r ./build/ proten@${{ secrets.SERVER_IP }}:/ssd/proten/nodejsAPI/react_test/
